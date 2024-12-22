@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><img src="https://deepthought.education/assets/images/logo/logo.svg" alt="Deep Thought Logo" />
+        </h1>
+        <h1 style="color: blueviolet;">Technical Project Management</h1>
+        <div class="header-icons">
+            <button class="icon-button">☰</button>
+            <button class="icon-button">🔔</button>
+            <button class="icon-button">⚙</button>
+        </div>
+    </header>
+    
+    <div class="sidebar">
+        <div id="board-collapsed" style="cursor: pointer;">☰ Journey Board</div>
+        <div id="board-expanded" style="display: none;">
+            <ul>
+                <li>Explore the world of management</li>
+                <li>Technical Project Management</li>
+                <li>Threadbuild</li>
+                <li>Structure Your Pointers</li>
+                <li>4SA Method</li>
+            </ul>
+        </div>
+    </div>
+    
+    <main class="main-content">
+        <div id="asset-container"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

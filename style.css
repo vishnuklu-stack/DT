@@ -1,0 +1,146 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f8f9fa;
+}
+
+.logo {
+    background-image: url('https://deepthought.education/assets/images/logo/logo.svg');
+    width: 100px; 
+    height: 100px; 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.icon-button {
+    background-color: white;
+    color: #007BFF;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.icon-button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 250px;
+    background-color: #ffffff;
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+#board-collapsed {
+    font-size: 16px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#board-expanded {
+    font-size: 16px;
+    padding: 10px;
+}
+
+#board-expanded ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#board-expanded li {
+    padding: 8px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+.main-content {
+    margin-left: 270px;
+    padding: 80px 20px;
+    width: calc(100% - 270px);
+}
+
+.asset {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.asset h3 {
+    margin-top: 0;
+    color: #007BFF;
+}
+
+.asset p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.asset iframe, .asset audio {
+    width: 100%;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 220px;
+        width: calc(100% - 220px);
+    }
+}
